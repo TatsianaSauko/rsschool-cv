@@ -71,4 +71,4 @@ def solution(args):
 ***
 ### Languages:
 * Russian, Belarusian - Native
-* English - A2
+* English - Pre-intermediate
