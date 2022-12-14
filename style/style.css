@@ -28,14 +28,22 @@
 .menu li {
   float:left; /*Размещаем список горизонтально для реализации меню*/
 }
-#photo {
-  float: left;
+.wrapper {
+  height: 250px;
 }
-#info {
-  display:table-cell;
-  /*font-size: 24px;*/
+.fio {
+  position: relative;
+  top: -210px;
+  left: 320px;
+}
+.info {
+  position: relative;
+  top: -210px;
+  left: 300px;
 }
 #list {
   line-height: 1.5;
-  margin-top: 20px;
+}
+pre {
+  background-color: #e3e3e3;
 }

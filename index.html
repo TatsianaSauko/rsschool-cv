@@ -1,36 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/style.css">
     <title>CV</title>
-  </head>
-  <body class="container">
-    <header>
-      <nav class="menu">
+</head>
+<body class="container">
+<header>
+    <nav class="menu">
         <ul>
-          <li><a href="#">Contact information</a></li>
-          <li><a href="#">About Me</a></li>
-          <li><a href="#">Skills</a></li>
-          <li><a href="#">Code example</a></li>
-          <li><a href="#">Work experience</a></li>
-          <li><a href="#">Education</a></li>
-          <li><a href="#">Languages</a></li>
+            <li><a href="#contact">Contact information</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#code">Code example</a></li>
+            <li><a href="#experience">Work experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#languages">Languages</a></li>
         </ul>
-      </nav>
-      <div id="photo">
-        <img  src="images/IMG_7.jpg" alt="Sauko Tatsiana">
-      </div>
-      <div id="info">
-        <ul id="list">
-        <li>Location: Minsk, Belarus</li>
-        <li>Phone: +375291716142</li>
-        <li>E-mail: tatsianasavko5@gmail.com</li>
-        <li><a href="https://www.linkedin.com/in/tatsiana-savko-278104230" target="_blank">LinkedIn</a></li>
-      </ul>
-      </div>
-    </header>
-  </body>
+    </nav>
+    <div class="wrapper">
+        <div class="photo">
+            <img src="images/IMG_7.jpg" alt="Sauko Tatsiana">
+        </div>
+        <div class="fio"><h1>Sauko Tatsiana</h1></div>
+        <div class="info" id="contact">
+            <ul id="list">
+                <li>Location: Minsk, Belarus</li>
+                <li>Phone: +375291716142</li>
+                <li>E-mail: tatsianasavko5@gmail.com</li>
+                <li><a href="https://www.linkedin.com/in/tatsiana-savko-278104230" target="_blank">LinkedIn</a></li>
+            </ul>
+        </div>
+
+    </div>
+</header>
+<main>
+    <div id="about">
+        <h2>About Me</h2>
+        <p>I'd describe myself as a goal-oriented and hardworking person with good organizational skills and strategic
+            thinking.</p>
+        <p>I am said to be realiable, extemely dedicated and able to perform well using my initiative.</p>
+        <p>I always do my best to achieve professional goals.</p>
+    </div>
+    <div id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Programming language: Python</li>
+            <li>Framework: Django</li>
+            <li>IDE: PyCharm</li>
+            <li>Code version technologies: Git (GitHub)</li>
+            <li>English Proficiency: A2 - > B1</li>
+        </ul>
+    </div>
+    <div id="code">
+        <h2>Code example</h2>
+        <pre>
+            def solution(args):
+                list_res = []
+                list_prom = [args[0]]
+                for i in range(len(args) - 1):
+                    if args[i] + 1 == args[i + 1]:
+                        list_prom.append(args[i + 1])
+                    else:
+                        list_res.append(list_prom)
+                        list_prom = [args[i + 1]]
+                list_res.append(list_prom)
+                list_output = []
+                for i in range(len(list_res)):
+                    if len(list_res[i]) == 2:
+                        list_output.append(str(list_res[i][0]))
+                        list_output.append(str(list_res[i][1]))
+                    elif len(list_res[i]) == 1:
+                        list_output.append(str(list_res[i][0]))
+                    else:
+                        list_output.append(f'{list_res[i][0]}-{list_res[i][-1]}')
+                return ','.join(list_output)
+        </pre>
+    </div>
+    <div id="experience">
+        <h2>Work experience</h2>
+        <p><b>Education Center for Programming and High Tech</b>/ Trainee Python Developer</p>
+        <ul>
+            <li>
+                Django online bookstore project: selecting a section, viewing a product, placing an order, applying a
+                discount, registering, authorizing, recovering a password and logging in with Google
+            </li>
+            <li>Tech stack: Django, Git, HTML, CSS, PostgreSQL</li>
+            <li><a href="https://github.com/TatsianaSauko/DjangoProject">link to the GitHub</a></li>
+        </ul>
+    </div>
+    <div id="education">
+        <h2>Education</h2>
+        <h3>Courses</h3>
+        <ul>
+            <li>
+                <p><b>Education Center for Programming and High Tech</b>/ A comprehensive course on developing web
+                    applications in Python</p>
+                <ul>
+                    <li>Studying programm: <a
+                            href="https://www.it-academy.by/course/python-developer/pt-python-developer/?set_city=84">link</a>
+                    <li>Electronic certificate: <a href="https://disk.yandex.ru/i/_9Cnl6tSXR3CKA">link</a></li>
+                </ul>
+            </li>
+            <li>
+                <p><b>Education Center for Programming and High Tech</b>/ Fundamentals of web thechnologies</p>
+                <ul>
+                    <li>Studying programm: <a
+                            href="https://www.it-academy.by/course/asp-net-developer/proektirovanie-veb-stranits-dlya-programmistov-/">link</a>
+                </ul>
+            </li>
+        </ul>
+        <h3>University</h3>
+        <ul>
+            <li><b>Mogilev University A. A. Kuleshova</b>/ Faculty of Physics and Mathematics, speciality: Teacher of
+                mathematics and computer science
+            </li>
+        </ul>
+    </div>
+    <div id="languages">
+        <h2>Languages</h2>
+        <ul>
+            <li>Russian, Belarusian - Native</li>
+            <li>English - Pre-intermediate</li>
+        </ul>
+    </div>
+</main>
+</body>
 </html>
