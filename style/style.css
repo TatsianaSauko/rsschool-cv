@@ -1,6 +1,6 @@
 .container {
     margin: 0 auto;
-    height: auto;
+    /*height: auto;*/
     width: 1140px;
 }
 .menu ul {
@@ -45,5 +45,9 @@
   line-height: 1.5;
 }
 pre {
-  background-color: #e3e3e3;
+  background-color: #e9e9e9;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
 }
