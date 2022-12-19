@@ -1,0 +1,53 @@
+.container {
+    margin: 0 auto;
+    /*height: auto;*/
+    width: 1140px;
+}
+.menu ul {
+  list-style: none; /*убираем маркеры списка*/
+  margin: 0; /*убираем отступы*/
+  padding-left: 0; /*убираем отступы*/
+  background: gray; /*добавляем фон всему меню (заменив этот параметр, вы поменяете цвет всего меню)*/
+  height: 50px; /*задаем высоту*/
+}
+.menu a {
+  text-decoration: none; /*убираем подчеркивание текста ссылок*/
+  background: gray; /*добавляем фон к пункту меню (заменив этот параметр, вы поменяете цвет всех пунктов меню)*/
+  color:#fff; /*меняем цвет ссылок*/
+  padding:0 30px; /*добавляем отступ*/
+  line-height:50px; /*ровняем меню по вертикали*/
+  display: block;
+  border-right: 1px solid grey; /*добавляем бордюр справа*/
+  -moz-transition: all 0.3s 0.01s ease; /*делаем плавный переход*/
+  -o-transition: all 0.3s 0.01s ease;
+  -webkit-transition: all 0.3s 0.01s ease;
+}
+.menu a:hover {
+  background:#D43737;/*добавляем эффект при наведении*/
+}
+.menu li {
+  float:left; /*Размещаем список горизонтально для реализации меню*/
+}
+.wrapper {
+  height: 250px;
+}
+.fio {
+  position: relative;
+  top: -210px;
+  left: 320px;
+}
+.info {
+  position: relative;
+  top: -210px;
+  left: 300px;
+}
+#list {
+  line-height: 1.5;
+}
+pre {
+  background-color: #e9e9e9;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+}
